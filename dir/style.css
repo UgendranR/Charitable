@@ -28,8 +28,8 @@ header {
 }
 
 .headText {
-    margin-left: 4rem;
-    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
     color: white;
     position: absolute;
     left: 20px;
@@ -38,6 +38,31 @@ header {
     font-weight: 100;
 }
 
+.headText:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .headText:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.headText a{
+    color: white;
+    text-decoration: none;
+}
+.headText a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
 .navlinks {
     display: flex;
     align-items: center;
@@ -50,7 +75,8 @@ header {
     cursor: pointer;
 }
 
-.navlinks li {
+.navlinks a {
+    padding: 10px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -58,8 +84,10 @@ header {
     justify-content: center;
 }
 
-.navlinks li:hover {
-   text-decoration-line: underline ;
+.navlinks a:hover {
+    background-color: white;
+    color:tomato;
+    
 }
 
 .links {
