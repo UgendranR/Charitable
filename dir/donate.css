@@ -110,3 +110,21 @@ h2 {
 .form:hover {
   background-color: rgba(25, 25, 25, 0.4);
 }
+
+footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+   float:right;
+   margin-right: 30px;
+  
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.contact li a{
+    margin-left: -10px;
+}
+
+ 
